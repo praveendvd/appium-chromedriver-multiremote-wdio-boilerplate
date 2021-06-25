@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "🌍 spec - chrome",
+        "type": "node",
+        "request": "launch",
+        "args": ["wdio.conf.js", "--spec", "${file}"],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "spec - firefox",
+        "type": "node",
+        "request": "launch",
+        "args": ["wdio.conf.js", "--spec", "${file}", "--firefox"],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "spec - edge",
+        "type": "node",
+        "request": "launch",
+        "args": ["wdio.conf.js", "--spec", "${file}", "--edge"],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "all - chrome",
+        "type": "node",
+        "request": "launch",
+        "args": ["wdio.conf.js"],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
