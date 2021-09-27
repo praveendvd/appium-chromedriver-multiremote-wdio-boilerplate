@@ -23,6 +23,16 @@ You can use WebdriverIO to automate:
 
 # Usage guide for the solution
 
+### What is multi-remote
+
+multiremote feature in webdriverio allows to run multiple browser instance with different capabilities and access it within same test example
+
+```
+//where a can be appium and b can be chromedriver
+a.click()
+b.click()
+```
+
 ### Pre-requisite
 
 Make sure nodejs latest is installed
